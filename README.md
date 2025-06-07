@@ -1,40 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# EventHub - Simplified Event Management System
+
+## Overview
+
+EventHub is a web application built with **Next.js**, **SQLite** (in-memory database), and **Tailwind CSS**. The application enables users to:
+- View a list of upcoming events (tech meetups, webinars, workshops)
+- View details about a specific event
+- Register for an event
+- Administer analytics: view popular events and daily stats
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+To run this project, you need to have the following installed:
+1. **Node.js** (version 16.x or higher)
+2. **npm** (or yarn, pnpm, etc.)
+3. **SQLite** (in-memory database used by default)
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/your-username/EventHub.git
+cd EventHub
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Key Sections Covered:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. **Getting Started**: Step-by-step instructions on how to run the app, including setup and installation.
+2. **Project Structure**: A detailed overview of the project structure, explaining the important directories and files.
+3. **SQL Query Optimization**: Discusses how the SQL database has been optimized for handling large datasets, including indexing, dynamic queries, and pagination.
+4. **Frontend Components**: An explanation of the frontend components used in the app, along with key design decisions.
+5. **Deployment**: Instructions for deploying the app on Vercel.
+6. **Conclusion**: A summary of the project, focusing on scalability and performance.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Feel free to adjust the content or details based on any specific project requirements or changes you've made.
