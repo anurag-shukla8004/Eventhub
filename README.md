@@ -1,38 +1,38 @@
 # EventHub - Simplified Event Management System
 
-## Overview
-
-EventHub is a web application built with **Next.js**, **SQLite** (in-memory database), and **Tailwind CSS**. The application enables users to:
-- View a list of upcoming events (tech meetups, webinars, workshops)
-- View details about a specific event
-- Register for an event
-- Administer analytics: view popular events and daily stats
-
----
-
-## Getting Started
-
-### Prerequisites
-
-To run this project, you need to have the following installed:
-1. **Node.js** (version 16.x or higher)
-2. **npm** (or yarn, pnpm, etc.)
-3. **SQLite** (in-memory database used by default)
-
-### 1. Clone the repository
-
-```bash
 git clone https://github.com/your-username/EventHub.git
 cd EventHub
+npm install
+npm run dev
 
+# SQL Query Optimization
+SQL Query Optimization:
+1.Indexed key fields like date, title, and event_id for faster searches.
 
-### Key Sections Covered:
+2.Paginated results to manage large data sets and reduce load times.
 
-1. **Getting Started**: Step-by-step instructions on how to run the app, including setup and installation.
-2. **Project Structure**: A detailed overview of the project structure, explaining the important directories and files.
-3. **SQL Query Optimization**: Discusses how the SQL database has been optimized for handling large datasets, including indexing, dynamic queries, and pagination.
-4. **Frontend Components**: An explanation of the frontend components used in the app, along with key design decisions.
-5. **Deployment**: Instructions for deploying the app on Vercel.
-6. **Conclusion**: A summary of the project, focusing on scalability and performance.
+3.Optimized SQL joins to fetch related data efficiently.
 
-Feel free to adjust the content or details based on any specific project requirements or changes you've made.
+4.Dynamic queries based on filters for better performance.
+
+5.Used WHERE clauses to filter data at the database level, minimizing processing.
+
+6.In-memory SQLite database for fast data access and lightweight performance.
+
+# Frontend :
+
+React Functional Components: We used React functional components, which are more concise and easier to maintain compared to class-based components.
+
+Tailwind CSS: For styling, we used Tailwind CSS to write utility-first CSS. This allows for rapid development and easy-to-read code, with built-in responsiveness and customizable themes.
+
+Dynamic Event Filtering: Filters like event name, location, and date range are implemented dynamically, allowing users to quickly filter events on the client-side.
+
+Component Reusability: Components like EventCard, EventFilter, and LoadingSpinner are designed to be reusable across the app, promoting cleaner code and easier maintenance.
+
+Conditional Rendering: Used conditional rendering for loading states, empty states, and error handling, ensuring a smooth user experience during data fetching and other asynchronous operations.
+
+Next.js API Routes: We leveraged Next.js API routes to handle server-side logic such as fetching events, registering users, and gathering analytics. This makes the front-end development more modular and clean.
+
+State Management: Used React’s useState and useEffect hooks to manage and track states such as loading, error messages, and fetched event data, improving performance and responsiveness.
+
+Optimized Data Fetching: We used fetch for API calls and managed asynchronous state updates efficiently to ensure the page loads quickly, even with larger data sets like 1 million events.
