@@ -1,10 +1,10 @@
 # EventHub - Simplified Event Management System
-
+``` bash
 git clone https://github.com/your-username/EventHub.git
 cd EventHub
 npm install
 npm run dev
-
+``` 
 # SQL Query Optimization
 SQL Query Optimization:
 1.Indexed key fields like date, title, and event_id for faster searches.
